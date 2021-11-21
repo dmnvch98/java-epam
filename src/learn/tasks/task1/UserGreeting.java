@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class UserGreeting {
 
     public static void main(String[] args) {
-	    new UserGreeting().greetings(askName());
+	    new UserGreeting().greetings();
     }
 
-    public void greetings(String name){
-        System.out.println("Hello " + name);
+    public void greetings(){
+        System.out.println("Hello " + askName());
     }
 
     public static String askName(){
