@@ -1,7 +1,5 @@
 package learn.tasks.task1;
 
-import java.util.Scanner;
-
 public class UserGreeting {
 
     public static void main(String[] args) {
@@ -13,8 +11,6 @@ public class UserGreeting {
     }
 
     public static String askName(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter your name: ");
-        return scanner.next();
+        return Utils.ask("what is your name? ");
     }
 }

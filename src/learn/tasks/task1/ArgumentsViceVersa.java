@@ -1,15 +1,11 @@
 package learn.tasks.task1;
 
-import java.util.Scanner;
-
 public class ArgumentsViceVersa {
     public static void main(String[] args) {
         new ArgumentsViceVersa().printArguments();
     }
     public static String askArguments(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter nums separated by space: ");
-        return scanner.nextLine();
+        return Utils.ask("enter nums separated by space:");
     }
 
     public void printArguments(){

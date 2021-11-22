@@ -1,7 +1,6 @@
 package learn.tasks.task1;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class RandomValues {
     public static void main(String[] args) {
@@ -14,11 +13,9 @@ public class RandomValues {
     }
 
     public static int askQty(){
-        Scanner scanner = new Scanner(System.in);
         int value;
         do {
-            System.out.println("Enter quantity of random values in range 2-100:");
-            value = scanner.nextInt();
+            value = Integer.parseInt(Utils.ask("Enter quantity of random values in range 2-100:"));
         } while(value > 100 || value < 2);
         return value;
     }
