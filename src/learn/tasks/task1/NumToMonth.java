@@ -9,6 +9,7 @@ public class NumToMonth {
         do {
             number = Integer.parseInt(Utils.ask("Enter number in range 1-12"));
         } while(number > 13 || number < 1);
+
         return number;
     }
 
